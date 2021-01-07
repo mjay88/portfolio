@@ -1,51 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
     <meta charset="utf-8">
-    <title>Project Number 1: The End of working in a Bar</title>
-  </head>
+    <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
+    <title>HTML and Semantic Elements</title>
+</head>
+<!--add a table of commononly used html tags-2-->
 
-  <body>
+<body>
     <header>
-      <h1>Working in a Bar Sucks</h1>
-      <nav>
-        <a href="index.html">Back Home</a>
-        <a href="projects.html">Projects Page</a>
-      </nav>
+        <h1>HTM What?</h1>
+        <nav>
+            <a href="index.html">Back Home</a>
+            <a href="projects.html">Projects Page</a>
+        </nav>
     </header>
     <section>
-      <h2>Working in a bar was cool before covid-19</h2>
-      <article>
-        <h3>Loss of wages, capacity restrictions make it hard for service industry workers during pandemic</h3>
-          <p>More stuff about bars and restaurants during pandemic here...</p>
-      </article>
-    </section>
-    <section class="dont_work_in_a_bar">
-      <article>
-      <h3>Why does working in a bar suck?</h3>
-      <ul>
-          <li>Your co-workers are probably lazy</li>
-          <li>Your co-workers ar probably alcoholics</li>
-          <li>The clientelle are a bunch of jerks</li>
-      </ul>
-      </article>
-    </section>
-    <aside>
-      <section class="new-career">
+        <h2>Learning HTML5</h2>
         <article>
-          <h3>No time like the present to consider a career change.</h3>
-            <p>I've always wanted to be able work remotely, and with how the coronavirus has affected the economy across all industies, I figure right about now my be time to make a transition into the tech industry.</p>
+            <h3>Unlearning the past...</h3>
+            <p>Since I am learning HTML5 in the year of our lord 2021, I have'nt even been shown the proper way to use a div element yet, but I'm sure we'll get there soon. So far, it has been impressed upon me to use(from what I understand are relatively
+                newer)sectioning elements. This practice is understood as using HTML elements semantically.
+            </p>
+            <p>In language, semantics refers to how words are interpreted or the meaning of words. Typically, when writing something-let's say something like an editorial-we want to be as precise and concise as possible, with the goal of getting our argument
+                across as clearly as we can. Basically we want it to make as much sense as possible to whoever is reading it, so it is best practice to avoid pedantic words and phrases or anything else that is going to distract from getting the point
+                across, such as unconventional formatting or overly stylized formating, and use proper syntax and punctuation, so the reader is focused on your argument, and not your spelling or punctuation errors. When writing in HTML, semantic elements
+                can be understood in the same way (in HTML, semantic elements is typically referring to HTML tags). Just like a persuasive editorial, we would want our HTML to be as precise and concise as possible, i.e.; only using div and span tags when
+                we have an explicit reason to do so. This is not only important for someone else who may be looking at your HTML file directly, but also for web browsers which will be reading your HTML as well. Using appropriate semantic elements helps
+                with the accessibility of our webpage. Assistive technologies such as screen readers rely on the proper use of semantic elements for those with disabilities to be able to access them. Using semantic elements helps web browsers make sense
+                of your content, with the ultimate goal of more people seeing your page more often. A properly formatted HTML file with a good use of semantic elements will be much easier for another programmer or a co-worker to understand, so they can
+                focus on an actual task instead of having to decipher confusing or poorly written code. We should always write our HTML while considering semantic elements, with the end goal of being as precise and descriptive as possible with our HTML
+                tags.</p>
         </article>
-      </section>
-    </aside>
-      <footer>
+    </section>
+    <section>
+        <h3>Commonly used/new? elements</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Element</th>
+                    <th> Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>section</td>
+                    <td>Used for grouping together thematically-related content. Sounds like a div element, but its not. The div has no semantic meaning. Before replacing all your div’s with section elements, always ask yourself, “Is all of the content related?”
+                    </td>
+                </tr>
+                <tr>
+                    <td>aside</td>
+                    <td>Used for tangentially related content. Just because some content appears to the left or right of the main content isn’t enough reason to use the aside element. Ask yourself if the content within the aside can be removed without reducing
+                        the meaning of the main content. Pullquotes are an example of tangentially related content.</td>
+                </tr>
+                <tr>
+                    <td>header</td>
+                    <td>There is a crucial difference between the header element and the general accepted usage of header (or masthead). There’s usually only one header or ‘masthead’ in a page. In HTML5 you can have as many as you want. The spec defines it
+                        as “a group of introductory or navigational aids”. You can use a header in any section on your site. In fact, you probably should use a header within most of your sections. The spec describes the section element as “a thematic
+                        grouping of content, typically with a heading.”</td>
+                </tr>
+                <tr>
+                    <td>nav</td>
+                    <td>Intended for major navigation information. A group of links grouped together isn’t enough reason to use the nav element. Site-wide navigation, on the other hand belongs in a nav element.</td>
+                </tr>
+                <tr>
+                    <td>footer</td>
+                    <td> Sounds like its a description of the position, but its not. Footer elements contain information about it’s containing element: who wrote it, copyright, links to related content, etc. Whereas we usually have one footer for an entire
+                        document, HTML5 allows us to also have footer within sections.</td>
+                </tr>
+                <tr>
+                    <td>article</td>
+                    <td>The article element is another specialized kind of section. Use it for self-contained related content. The article element is useful for blog posts, news stories, comments, reviews, and forum posts. The HTML5 specification goes further
+                        than that. It also declares that the article element should be used for self-containded widgest: stock tickers, calculators, clocks, weather widgets, and the like. The WHATWG says:
+                        <blockquote>
+                            <p><em>A section forms part of something else. An
+                  article is its own
+                  thing. But how does one know which is which: Mostly the real anser is "it depends on author
+                  intent"</em>
+                                <a href="http://bkaprt.com/html52e/04-05">http://bkaprt.com/html52e/04-05</a>
+                            </p>
+                        </blockquote> You can have multiple article elements wihtin a section; you can have multiple section elements within an article; you cna nest sections within sections and articles within articles. It's up to you to decide which element is the
+                        most semantically appropriate in any given situation
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+    </section>
+    <section>
+        <h3>Using HTML5 semantic elements in real life</h3>
+        <p>The new elements of HTML5 give us the ability to structure our websites with intuitive divisions. Most modern conventional sites consisit of a section with a header followed by nested articles, with non essential content in an aside element, concluded
+            with a footer. While keeping in mind the benefits of using good practices with new sectioning elements and semantic elements, these new elements were not created to replace div elements. Proper use of div elements provides our site with dynamism
+            that is otherwise hard to accomplish.</p>
+    </section>
+    <section>
+        <p>All content on this page regarding mark up language is either copied or paraphrazed from
+            <a href="https://abookapart.com/products/html5-for-web-designers">HTML5 For Web Designers</a> by Jeremy Keith and Rachel Andrew. I would highly recommend anyone one looking for a consice and absolute reference regarding HTML5 purchasing this
+            book.</p>
+    </section>
+    <footer>
         <h5>this page is a work in progess, please bare with us...</h5>
         <nav>
-          <a href="index.html">Back Home</a>
-          <a href="projects.html">Projects Page</a>
+            <a href="index.html">Back Home</a>
+            <a href="projects.html">Projects Page</a>
         </nav>
-      </footer>
-  </body>
+    </footer>
+</body>
 
 </html>
