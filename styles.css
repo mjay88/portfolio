@@ -1,0 +1,427 @@
+    html {
+        font-size: 2rem;
+    }
+    
+    body {
+        height: 5000px;
+    }
+    
+    .container1 {
+        background-color: #caf0f8;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 90%;
+        height: 15%;
+        margin: 0 auto;
+        border: 2px solid black;
+        text-align: center;
+    }
+    
+    .container1 div {
+        text-align: center;
+        vertical-align: middle;
+        line-height: 90px;
+        width: 90px;
+        height: 90px;
+        border: 1px solid black;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    
+    .one {
+        background-color: #ade8f4;
+    }
+    
+    .two {
+        background-color: #90e0ef;
+    }
+    
+    .three {
+        background-color: #48cae4;
+    }
+    
+    .four {
+        background-color: #00b4d8;
+    }
+    
+    .five {
+        background-color: #0096c7;
+    }
+    
+    .six {
+        background-color: #0077b6;
+    }
+    
+    .seven {
+        background-color: #023e8a;
+    }
+    
+    .eight {
+        background-color: #03045e;
+    }
+    
+    .container2 {
+        background-color: #caf0f8;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* flex-direction: row;
+        flex-wrap: wrap; */
+        flex-flow: row wrap-reverse;
+        width: 90%;
+        height: 15%;
+        margin: 0 auto;
+        border: 2px solid black;
+        text-align: center;
+    }
+    
+    .container2 div {
+        text-align: center;
+        vertical-align: middle;
+        line-height: 90px;
+        width: 90px;
+        height: 90px;
+        border: 1px solid black;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    
+    .container2 .one {
+        background-color: #ade8f4;
+    }
+    
+    .container2 .two {
+        background-color: #90e0ef;
+    }
+    
+    .container2 .three {
+        background-color: #48cae4;
+    }
+    
+    .container2 .four {
+        background-color: #00b4d8;
+    }
+    
+    .container2 .five {
+        background-color: #0096c7;
+    }
+    
+    .container2 .six {
+        background-color: #0077b6;
+    }
+    
+    .container2 .seven {
+        background-color: #023e8a;
+    }
+    
+    .container2 .eight {
+        background-color: #03045e;
+    }
+    
+    .container3 {
+        background-color: #caf0f8;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 50%;
+        height: 20%;
+        margin: 0 auto;
+        border: 2px solid black;
+        text-align: center;
+    }
+    
+    .container3 div {
+        text-align: center;
+        vertical-align: middle;
+        line-height: 90px;
+        width: 90px;
+        height: 90px;
+        border: 1px solid black;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    
+    .container3 .one {
+        background-color: #ade8f4;
+    }
+    
+    .container3 .two {
+        background-color: #90e0ef;
+    }
+    
+    .container3 .three {
+        background-color: #48cae4;
+    }
+    
+    .container3 .four {
+        background-color: #00b4d8;
+    }
+    
+    .container3 .five {
+        background-color: #0096c7;
+    }
+    
+    .container3 .six {
+        background-color: #0077b6;
+    }
+    
+    .container3 .seven {
+        background-color: #023e8a;
+    }
+    
+    .container3 .eight {
+        background-color: #03045e;
+    }
+    
+    .container4 {
+        position: relative;
+        background-color: #caf0f8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        width: 90%;
+        height: 15%;
+        margin: 0 auto;
+        border: 2px solid black;
+        text-align: center;
+    }
+    
+    .container4 div {
+        text-align: center;
+        vertical-align: middle;
+        line-height: 90px;
+        width: 90px;
+        height: 90px;
+        border: 1px solid black;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    
+    .container4>div:nth-of-type(2n) {
+        height: 120px;
+        /* is there not a way to align baselines? without fucking with the margin? */
+        margin-bottom: 2rem;
+    }
+    
+    .container4 .one {
+        background-color: #ade8f4;
+    }
+    
+    .container4 .two {
+        background-color: #90e0ef;
+    }
+    
+    .container4 .three {
+        background-color: #48cae4;
+    }
+    
+    .container4 .four {
+        background-color: #00b4d8;
+    }
+    
+    .container4 .five {
+        background-color: #0096c7;
+    }
+    
+    .container4 .six {
+        background-color: #0077b6;
+    }
+    
+    .container4 .seven {
+        background-color: #023e8a;
+    }
+    
+    .container4 .eight {
+        background-color: #03045e;
+    }
+    
+    .container5 {
+        background-color: #caf0f8;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row-reverse;
+        flex-wrap: wrap-reverse;
+        width: 25%;
+        height: 20%;
+        margin: 0 auto;
+        border: 2px solid black;
+        text-align: center;
+    }
+    
+    .container5 div {
+        text-align: center;
+        vertical-align: middle;
+        line-height: 90px;
+        width: 90px;
+        height: 90px;
+        border: 1px solid black;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    
+    .container5 .one {
+        background-color: #ade8f4;
+    }
+    
+    .container5 .two {
+        background-color: #90e0ef;
+    }
+    
+    .container5 .three {
+        background-color: #48cae4;
+    }
+    
+    .container5 .four {
+        background-color: #00b4d8;
+    }
+    
+    .container5 .five {
+        background-color: #0096c7;
+    }
+    
+    .container5 .six {
+        background-color: #0077b6;
+    }
+    
+    .container5 .seven {
+        background-color: #023e8a;
+    }
+    
+    .container5 .eight {
+        background-color: #03045e;
+    }
+    
+    .container6 {
+        background-color: #caf0f8;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 25%;
+        height: 9%;
+        margin: 0 auto;
+        border: 2px solid black;
+        text-align: center;
+    }
+    
+    .container6 div {
+        text-align: center;
+        vertical-align: middle;
+        line-height: 90px;
+        width: 90px;
+        height: 90px;
+        border: 1px solid black;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    
+    .container6 .one {
+        background-color: #ade8f4;
+    }
+    
+    .container6 .two {
+        background-color: #90e0ef;
+    }
+    
+    .container6 .three {
+        background-color: #48cae4;
+    }
+    
+    .container6 .four {
+        background-color: #00b4d8;
+    }
+    
+    .container6 .five {
+        background-color: #0096c7;
+    }
+    
+    .container6 .six {
+        background-color: #0077b6;
+    }
+    
+    .container6 .seven {
+        background-color: #023e8a;
+    }
+    
+    .container6 .eight {
+        background-color: #03045e;
+    }
+    
+    h1,
+    h2,
+    footer {
+        text-align: center;
+    }
+    
+    .margin {
+        margin-bottom: 5%;
+    }
+    
+    .activity>p {
+        text-align: center;
+    }
+    
+    .fa-pizza-slice {
+        size: 10rem;
+    }
+    
+    .fas fa-hamburger fa-2x {
+        margin-left: 2rem;
+    }
+    
+    .one {
+        font-family: 'Josefin Sans', sans-serif;
+        /* font-size: 2rem; can not resize this text for some reason???? */
+    }
+    
+    .two {
+        font-family: 'Fraunces', serif;
+    }
+    
+    .three {
+        font-family: 'Dancing Script', cursive;
+    }
+    
+    .four {
+        font-family: 'Permanent Marker', cursive;
+    }
+    
+    .five {
+        font-family: 'Great Vibes', cursive;
+    }
+    
+    .six {
+        font-family: 'Gloria Hallelujah', cursive;
+        color: #caf0f8;
+    }
+    
+    .seven {
+        font-family: 'Cookie', cursive;
+        color: #90e0ef;
+    }
+    
+    .eight {
+        font-family: 'Homemade Apple', cursive;
+        color: #ade8f4;
+    }
+    
+    h1,
+    h2,
+    h3 {
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+    }
+    
+    p {
+        font-family: 'Dancing Script', cursive;
+    }
