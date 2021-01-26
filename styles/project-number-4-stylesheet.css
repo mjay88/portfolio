@@ -1,0 +1,110 @@
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    margin: auto 2rem;
+    font-size: 1rem;
+    text-align: center;
+    background-color: lightpink;
+}
+
+img {
+    width: 15rem;
+    height: 15rem;
+    border: 1px solid black;
+}
+
+section {
+    position: relative;
+    margin-bottom: 3rem;
+    overflow: visible;
+}
+
+div.top {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 3rem;
+    position: relative;
+    overflow: hidden;
+}
+
+div.bottom {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.top img:nth-child(1) {
+    transition: border-radius 3s ease-in-out 1s;
+}
+
+* img {
+    position: relative;
+    overflow: hidden;
+}
+
+
+/*nth of type with the pseudo selector?   .top img:nth-child:hover?     section:hover img:nth-child(1)?  */
+
+.one:hover {
+    border-radius: 50%;
+}
+
+.top img:nth-child(2) {
+    /*targeting second img with nth child*/
+    position: relative;
+    transition: margin-left 2s ease 2s;
+    z-index: -1;
+}
+
+.top:hover img:nth-child(2) {
+    /*targeting second img with nth child*/
+    margin-left: -32.5rem;
+}
+
+.top img:nth-child(3) {
+    /*targeting third img with nth child*/
+    transition: all 1s ease;
+}
+
+.top:hover img:nth-child(3) {
+    /*targeting third img with nth child*/
+    width: 400px;
+    height: 400px;
+}
+
+
+/*bottom row*/
+
+.bottom img:nth-child(1) {
+    /*first img bottm row target, takes affect when hovering over entire section not img*/
+    transition: all 1s ease-in-out;
+}
+
+.bottom:hover img:first-child {
+    width: 5rem;
+    height: 5rem;
+}
+
+.bottom img:nth-child(2) {
+    /*targeting second img in bottom*/
+    transition: all 1s ease;
+}
+
+.bottom:hover img:nth-child(2) {
+    /*targeting second img in bottom*/
+    transform: rotate(-20deg);
+}
+
+.bottom img:nth-child(3) {
+    transition: all 1s ease-in-out 1s;
+}
+
+.bottom:hover img:nth-child(3) {
+    transform: rotate(360deg);
+}
