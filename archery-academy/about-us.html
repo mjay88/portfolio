@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="archery-stylesheet.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/95e5c4f760.js" crossorigin="anonymous"></script>
+    <title>About Us</title>
+    <style>
+        .header {
+            grid-area: header;
+        }
+        
+        .about {
+            grid-area: about;
+        }
+        
+        .item1 {
+            grid-area: item1;
+        }
+        
+        .item2 {
+            grid-area: item2;
+        }
+        
+        .item3 {
+            grid-area: item3;
+        }
+        
+        .footer {
+            grid-area: footer;
+        }
+        
+        .policy {
+            grid-area: policy;
+            font-style: italic;
+        }
+        
+        .container {
+            display: grid;
+            grid-template-areas: "header header header" "about about about" "item1 item2 item3" "policy policy policy" "footer footer footer";
+            text-align: left;
+            line-height: 2.5;
+        }
+        
+        .about,
+        .item1,
+        .item2,
+        .item3,
+        .policy {
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+        /* .item1 p { */
+        /* padding-left: 7%; */
+        /* } */
+        
+        .giap {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .name {
+            border-bottom-style: solid;
+            padding-bottom: 5%;
+        }
+        
+        blockquote>h2 {
+            font-family: Arial Bold;
+            font-size: 14px;
+            text-transform: capitalize;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <section class="header">
+            <div class="flexed">
+                <div class="social">
+                    <a class="contact" href="contact">253.253.2532</a>
+                    <!-- <a class="contact" href="contact">archeryacademy.com</a> -->
+                    <a href="facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="yelp"><i class="fab fa-yelp"></i></a>
+                </div>
+                <img class="logo" src="https://github.com/UWFront-End-Cert/html100/blob/master/lesson07-styleguide/styleguide%20design%20elements/archeryAcademy-logo-white.png?raw=true" alt="archery academy logo">
+                <nav class="primary">
+                    <a href="archery.html">Home</a>
+                    <a href="classes.html">Classes</a>
+                </nav>
+            </div>
+
+        </section>
+        <!-- <section class="container about"> -->
+        <section class="about">
+            <h2>About us...</h2>
+            <p>Straight to the Point Archery is a non profit archery education center founded in 2005 by Giap Nguyen. Our state of the art educational and training facility incorporates detailed technical video analysis combined with generations of archery
+                experience from certified coaches and instructors. Straight to the Point Archery is an indoor training facility with 28 shooting (14 - 10 yard lanes and 14 – 20 yard lanes) and 2 private coaching rooms. We also have access to 26 additional
+                20 yard lanes and an outdoor shooting field. We offer several types of lessons to accommodate everyone from the first time archer to the professional archer. Once set up with proper fitting equipment, each archer will be given the basic
+                safety instruction to start and will be introduced to various shooting techniques. From Beginner to Elite, archers of all ages and ability learn about this exciting Olympic and international sport. Sign up for a group lesson, private class,
+                schedule a birthday or corporate party or compete at one of our many tournaments. Straight to the Point Archery also offers homeschooling programs, kids club events, YMCA classes, Boy and Girl Scouts achievement programs and several other
+                youth group activities. We are dedicated to teaching valuable life skills to the youth in our community through the wonderful discipline of archery. Straight to the Point Archery has instructors that are qualified level 1 and level 2 instructors
+                and have met the safety requirements of the USA Archery (USAA). We teach in a positive learning environment. Our instructors also have extensive knowledge of the most advanced archery equipment and all forms of archery from the traditional
+                long bow to the modern compound. Straight to the Point Archery also has specific instructors for recreational archery, competitive archery and bow hunting. Straight to the Point Archery has an excellent network of contacts with the USA
+                Archery (USAA), Washington State Archery Association (WSAA), Washington State Bow Hunters (WSB), National Field Archery Association (NFAA) and many more national and state archery associations. These partnerships allow you to feel confident
+                in our facility and staff. Straight to the Point Archery’s staff has decades of experience in the archery industry. We are committed to educating you with any questions that you may have.
+            </p>
+
+            <!-- <section class="staff"> -->
+            <div class="giap">
+                <img class="nguyen" src="https://github.com/UWFront-End-Cert/html100/blob/master/lesson07-styleguide/styleguide%20design%20elements/instructor-bio-image4.png?raw=true" alt="black and white profile picture of instructor">
+                <blockquote>
+                    <h2>"My biggest goal is to see archery grow and help its participants to grow with it."</h2>
+                </blockquote>
+                <p>Giap Nguyen started Straight to the Point Archery in 2005. He's an avid and accomplished archer himself, having competed with the United States Archery Team in the 2000 Summer Olympics. He has three children, and started Straight to the
+                    Point in part because he was not satisfied with the archery eduction options for them in Tacoma. </p>
+            </div>
+        </section>
+        <!-- <div class="container1"> -->
+
+        <div class="item1">
+            <img src="https://github.com/UWFront-End-Cert/html100/blob/master/lesson07-styleguide/styleguide%20design%20elements/instructor-bio-image1.png?raw=true" alt="black and white profile picture of instructor">
+            <h2 class="name">Derek Jenkins</h2>
+            <h3>Certification:</h3>
+            <h2>Level 3 Coach</h2>
+            <h3>Coaching Bow Styles:</h3>
+            <h2>Recurve</h2>
+            <p>Derek is a Washington native and an experienced outdoorsman with many years hunting, fishing, skiing, canoeing, archery, shooting and minimalistic camping. His skillful mastery of bushcraft and wilderness survival knowledge helps define his
+                character. He enjoys handcrafting his own long bows, flint knapped primitive arrows and making custom leather products.</p>
+        </div>
+        <div class="item2">
+            <img src="https://github.com/UWFront-End-Cert/html100/blob/master/lesson07-styleguide/styleguide%20design%20elements/instructor-bio-image2.png?raw=true" alt="black and white profile picture of instructor">
+            <h2 class="name">Amy Smith</h2>
+            <h3>Certification:</h3>
+            <h2>Level 2 Coach</h2>
+            <h3>Coaching Bow Styles:</h3>
+            <h2>Compound, Long Distance</h2>
+            <p>Amy truly has a passion for archery. She comes from a long line of hunters, fisherman, and trappers of Canada. Amy places a strong emphasis on safety and is enthusiastic about teaching. Amy also loves fitness, and has been a YMCA group exercise
+                and personal trainer for over 18 years.</p>
+        </div>
+        <div class="item3">
+            <img src="https://github.com/UWFront-End-Cert/html100/blob/master/lesson07-styleguide/styleguide%20design%20elements/instructor-bio-image3.png?raw=true" alt="black and white profile picture of instructor">
+            <h2 class="name">Nathan Lee</h2>
+            <h3>Certification:</h3>
+            <h2>Level 3 Coach</h2>
+            <h3>Coaching Bow Styles:</h3>
+            <h2>Compound, Recurve</h2>
+            <p>Nathan is an USA Archery Certified Level 3 NTS – Coach and has been teaching archery since 2009. He has been interested in archery since he nocked his first arrow while a Boy Scout at Scout camp. Nathan has many years of experience teaching
+                people of all ages, experience gained as a Martial Arts Instructor and Studio Manager.</p>
+        </div>
+        <!-- </div> -->
+        <!-- </section> -->
+
+        <section class="policy">Nondiscriminatory Policy: Next Step Archery admits students of any race, gender presentation, sexuality, religion, national origin or ethnic origin to all rights, privileges, programs and activities available to students at the school. We do not
+            discriminate in administration of our educational policies, admission policies and other school administered programs. All students are welcome and valuable members of our community.</section>
+        <!-- </section> -->
+
+        <section class="footer">
+            <footer>
+                <img src="https://github.com/UWFront-End-Cert/html100/blob/master/lesson07-styleguide/styleguide%20design%20elements/archeryAcademy-logo-white.png?raw=true" alt="archery academy logo">
+                <nav class="primary">
+                    <div class="nav">
+                        <a href="archery.html">Home</a>
+                        <a href="classes.html">Classes</a>
+                    </div>
+                </nav>
+                <div class="bottom">
+                    <a href="contact">253.253.2532</a>
+                    <!-- <a href="contact">archeryacademy.com</a> -->
+                </div>
+                <p> &#169; Archery Academy, LLC | Seattle, WA</p>
+            </footer>
+        </section>
+    </div>
+</body>
+
+</html>
