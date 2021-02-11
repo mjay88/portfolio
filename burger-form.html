@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Burger Form</title>
+    <style>
+        html {
+            font-family: Arial Black, sans-serif;
+            font-size: 15px;
+        }
+        
+        body {
+            width: 100%;
+            height: 1000px;
+            box-sizing: border-box;
+            background-image: url(https://images.unsplash.com/photo-1562817981-221763b0c0e5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=3018&q=80);
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center center;
+        }
+        
+        button,
+        input,
+        select,
+        textarea,
+        legend,
+        fieldset,
+        [for="fries"] {
+            font-family: inherit;
+            font-size: 1.5rem;
+            /* color: rgb(240, 13, 164) */
+        }
+        
+        fieldset {
+            margin-bottom: 3rem;
+        }
+        
+        h1 {
+            margin: auto 0;
+            padding: 3rem 3rem 3rem 3rem;
+            font-size: 7rem;
+            /* color: rgb(240, 13, 164) */
+            z-index: 11;
+            margin-top: -4rem;
+        }
+        
+        h2 {
+            margin: auto 0;
+            /* color: rgb(240, 13, 164) */
+        }
+        /* h1,
+        h2,
+        fieldset,
+        button,
+        input,
+        select,
+        textarea,
+        legend  */
+        
+        .shimmer {
+            /* font-size: 2rem; */
+            color: #fff;
+            text-align: center;
+            text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #e64cab, 0 0 20px #e64cab, 0 0 25px #e64cab, 0 0 30px #e64cab, 0 0 35px #e64cab;
+        }
+        
+        [for="notes"] {
+            font-size: 1.5rem;
+            margin-top: 3rem;
+        }
+        
+        [for='fries'] {
+            margin-bottom: 3rem;
+        }
+        
+        textarea {
+            margin-bottom: 3rem;
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 1.2rem;
+            /* color: transparent; */
+        }
+        
+        textarea:focus {
+            background: white;
+            color: black;
+        }
+        
+        div.fries {
+            margin-bottom: 3rem;
+        }
+        
+        button {
+            margin-bottom: 5rem;
+        }
+        /* .shimmer {
+            text-align: center;
+            color: rgba(255, 255, 255, 0.1);
+            background: -webkit-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff));
+            background: -moz-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff));
+            background: gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff));
+            -webkit-background-size: 125px 100%;
+            -moz-background-size: 125px 100%;
+            background-size: 125px 100%;
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-clip: text;
+            -webkit-animation-name: shimmer;
+            -moz-animation-name: shimmer;
+            animation-name: shimmer;
+            -webkit-animation-duration: 2s;
+            -moz-animation-duration: 2s;
+            animation-duration: 2s;
+            -webkit-animation-iteration-count: infinite;
+            -moz-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+            background-repeat: no-repeat;
+            background-position: 0 0;
+            background-color: rgb(236, 226, 235);
+        }
+        
+        @-moz-keyframes shimmer {
+            0% {
+                background-position: top left;
+            }
+            100% {
+                background-position: top right;
+            }
+        }
+        
+        @-webkit-keyframes shimmer {
+            0% {
+                background-position: top left;
+            }
+            100% {
+                background-position: top right;
+            }
+        }
+        
+        @-o-keyframes shimmer {
+            0% {
+                background-position: top left;
+            }
+            100% {
+                background-position: top right;
+            }
+        }
+        
+        @keyframes shimmer {
+            0% {
+                background-position: top left;
+            }
+            100% {
+                background-position: top right;
+            }
+        } */
+        /* <!--hide defaults for checkboxes--> */
+        /* .checkbox input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0;
+        } */
+        /* .shimmer {
+            width: 40px;
+            height: 10px;
+            background: #555;
+            margin: 20px 80px;
+            position: relative;
+            border-radius: 3px;
+        }
+        
+        .shimmer label {
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            transition: all .5s ease;
+            cursor: pointer;
+            position: absolute;
+            top: -3px;
+            left: -3px;
+            background: #ccc;
+        }
+        
+        .shimmer input[type=checkbox]:checked+label {
+            left: 27px;
+        } */
+        /* form .signup {
+            justify-content: center;
+            flex-direction: column;
+            align-items: space-around;
+        } */
+        
+        #new {
+            /* postitioning sign up form */
+            color: #fff;
+            text-align: center;
+            text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #e64cab, 0 0 20px #e64cab, 0 0 25px #e64cab, 0 0 30px #e64cab, 0 0 35px #e64cab;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            width: 15%;
+            height: 4%;
+            position: fixed;
+            right: 83%;
+            top: 15%;
+            z-index: 10;
+            font-size: .75rem;
+        }
+        
+        .signup button {
+            margin-top: 2rem;
+        }
+        
+        .signup p {
+            margin-top: .5rem;
+        }
+        
+        .condiments {
+            display: flex;
+            justify-content: center;
+            position: relative;
+        }
+        
+        .signup input {
+            background: transparent;
+            border-radius: 1.2rem;
+            background: rgba(255, 255, 255, 0.5);
+            width: 85%;
+        }
+        
+        .signup input:focus {
+            background: white;
+            color: black;
+        }
+        
+        .signup input:focus {
+            background: white;
+            color: black;
+        }
+        
+        .signup button,
+        .shimmer button {
+            border-radius: 1.2rem;
+            background: none;
+            color: white;
+            border: 2px inset;
+            padding: 1em 2em;
+            font-size: 2.2em;
+            transition: color 0.25s, border-color 0.25s, box-shadow 0.25s, transform 0.25s;
+        }
+        
+        .signup button:hover,
+        .shimmer button:hover {
+            border-color: #f1ff5c;
+            color: white;
+            box-shadow: 0 0.5em 0.5em -0.4em #f1ff5c;
+            transform: translateY(-0.25em);
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 class="shimmer">Welcome To Build A Burger!</h1>
+    </header>
+
+    <form action="/cats" class="shimmer">
+        <h2 class="shimmer">Build Your Burger!!!</h2>
+        <fieldset class="meat shimmer">
+            <legend class="shimmer">Choose a protien</legend>
+            <input type="radio" name="protien" id="beef" value="beef">
+            <label for="beef">Beef</label>
+            <input type="radio" name="protien" id="turkey" value="turkey">
+            <label for="turkey">Turkey</label>
+            <input type="radio" name="protien" id="miracle-meat" value="miracle-meat">
+            <label for="miracle-meat">Miracle Meat</label>
+        </fieldset>
+
+        <fieldset class="buns shimmer">
+            <!-- <label for="bun-type">Pick your Buns</label> -->
+            <legend class="shimmer">Pick your Buns!</legend>
+            <select name="buns" id="bun-type">
+                    <option value="">Please Choose One</option>
+                    <option value="sesame">Sesame Seed Bun</option>
+                    <option value="wheat">Whole Wheat</option>
+                    <option value="Brioche">Brioche</option>
+                    <option value="gf">Gluten Free</option>
+                </select>
+        </fieldset>
+        <fieldset class="cheese shimmer">
+            <!-- <p>Choose a cheese</p> -->
+            <legend class="shimmer">Choose a cheese!</legend>
+            <input type="radio" name="cheese" id="blue" value="blue">
+            <label for="blue">Blue</label>
+            <input type="radio" name="cheese" id="cheddar" value="cheddar">
+            <label for="cheddar">Cheddar</label>
+            <input type="radio" name="cheese" id="swiss">
+            <label for="swiss">Swiss</label>
+            <input type="radio" name="cheese" id="american" value="american">
+            <label for="american">American</label>
+        </fieldset>
+        <fieldset class="condiments shimmer">
+            <!-- <p>The fixins</p> -->
+            <legend class="shimmer">fixins...</legend>
+            <input type="checkbox" name="tomato" id="tomato" value="tomato">
+            <label for="tomato">Tomato</label>
+            <input type="checkbox" name="lettuce" id="lettuce" value="lettuce">
+            <label for="lettuce">Lettuce</label>
+            <input type="checkbox" name="pickle" id="pickle" value="pickle">
+            <label for="pickle">Pickle</label>
+
+            <input type="checkbox" name="mayo" id="mayo" value="mayo">
+            <label for="mayo">Mayo</label>
+            <label for="mayoAmount">Amount of Mayo</label>
+            <input type="range" id="mayoAmount" name="mayoAmount" value="2" min="0" max="11">
+
+            <input type="checkbox" name="mustard" id="mustard" value="mustard">
+            <label for="mustard">Mustard</label>
+            <input type="checkbox" name="ketchup" id="ketchup" value="ketchup">
+            <label for="ketchup">Ketchup</label>
+            <!-- <input type="checkbox" name="" id="">
+            <input type="checkbox" name="" id="">
+            <input type="checkbox" name="" id="">
+            <input type="checkbox" name="" id=""> -->
+        </fieldset>
+        <div class="fries new shimmer">
+            <div class="fries shimmer">
+                <!-- <p>Do you want fries with that?</p> -->
+                <label for="fries">Do you want fries with that?</label>
+                <input type="radio" name="fries" id="fries" value="yes">
+                <label for="fries">Yes</label>
+                <input type="radio" name="fries" id="noFries" value="no">
+                <label for="noFries">No</label>
+            </div>
+        </div>
+        <div class="note shimmer">
+            <label for="notes">Any Special Requests?</label>
+            <br>
+            <!--don't try to size text area with css, use this inline syntax -->
+            <textarea id="notes" name="notes" rows="5" cols="30" placeholder="enter any special requests here..."></textarea>
+        </div>
+        <button class="shimmer">Build My Burger Please!!!</button>
+
+        <!--multiple syntax options here. if button element is inside of form element will submit form-->
+        <!-- <input type="submit" value="Build My Burger Please!!!"> -->
+    </form>
+    <div class="signup" id="new">
+        <form class="signup">
+            <h2>Create a New Account</h2>
+            <p>To save your fav burger!!!</p>
+            <label for="first">Enter First Name</label>
+            <input type="text" name="first" id="first" required>
+            <label for="last">Enter Last name</label>
+            <input type="text" name="last" id="last" required>
+            <label for="username">Pick a Username</label>
+            <input type="text" name="username" id="username" required maxlength="26">
+            <label for="email">Enter a valid email address</label>
+            <input type="email" name="email" id="email" required>
+            <label for="pw">Enter a password</label>
+            <br>
+            <p>(must be between 6 and 20 character, contain 1 number and 1 capital letter)</p>
+            <input type="password" name="pw" id="pw" pattern="(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])\S{6,}" minlength="6" maxlength="20">
+            <button class="shimmer">Start Burger Account!</button>
+
+
+        </form>
+    </div>
+
+
+
+
+
+
+</body>
+
+</html>
