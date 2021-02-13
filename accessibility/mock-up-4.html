@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    html {
+        font-size: 17px;
+        box-sizing: border-box;
+        width: auto;
+    }
+    
+    body {
+        position: relative;
+        width: 100%;
+        font-family: Arial, sans-serif;
+        box-sizing: border-box;
+    }
+    
+    .top {
+        position: relative;
+        box-sizing: border-box;
+        background-color: rgb(30, 159, 202);
+        background-image: url(https://github.com/UWFront-End-Cert/starters/blob/master/lesson04-mock2-banner-image.jpg?raw=true);
+        width: 100%;
+        height: 20%;
+        background-size: cover;
+        padding: 3rem;
+        color: white;
+    }
+    
+    h1 {
+        font-size: 3.5rem;
+        padding-left: 12%;
+        line-height: .25;
+    }
+    
+    .banner {
+        font-size: 1.75rem;
+        padding-left: 12%;
+        padding-top: -2rem;
+        line-height: .5;
+    }
+    
+    .primary {
+        background-color: lightgrey;
+        padding: 2rem;
+    }
+    
+    .nav {
+        padding-left: 12.5%;
+    }
+    
+    a {
+        color: black;
+        margin-left: 1rem;
+        text-decoration: none;
+        font-weight: 700;
+    }
+    
+    .space {
+        padding-left: .75rem;
+    }
+    
+    #bottom {
+        background-image: url(https://github.com/UWFront-End-Cert/starters/blob/master/lesson04-mock4-footer-image.jpg?raw=true);
+        background-size: cover;
+        /* width: 110%; */
+        height: 15rem;
+        position: relative;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        padding-bottom: 4rem;
+        padding-top: 2rem;
+        clear: both;
+        /*clear makes this section escape the rules*/
+        color: white;
+        text-align: center;
+        line-height: 1.75;
+        /* display: flex;
+            justify-content: center;
+            align-items: center; */
+    }
+    
+    ul {
+        list-style-type: none;
+    }
+    
+    li>a {
+        color: white;
+    }
+    
+    li {
+        display: inline;
+    }
+    
+    .wrap {
+        /* this is how you fixed the margin problem with the aside */
+        position: relative;
+        overflow: visible;
+        margin: auto 16%;
+        font-size: .80rem;
+    }
+    
+    .center {
+        box-sizing: border-box;
+        width: 80%;
+        float: right;
+        line-height: 1.75;
+    }
+    
+    aside {
+        text-align: left;
+        box-sizing: border-box;
+        width: 20%;
+        float: right;
+        padding-left: 2.5rem;
+        line-height: 1.5;
+        clear: both;
+        margin-top: 2rem;
+    }
+    
+    .tabby {
+        width: 15rem;
+        padding-right: 5rem;
+    }
+    
+    figure {
+        position: relative;
+        display: inline-block;
+        margin-left: -.25rem;
+        box-sizing: border-box;
+        width: 15rem;
+        margin-bottom: 5rem;
+    }
+    
+    figcaption {
+        box-sizing: border-box;
+        text-align: center;
+        width: 15rem;
+    }
+    
+    .nudge {
+        /* position: relative
+        right: 1rem; */
+        overflow: visible;
+    }
+    /*
+    figure>a {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        }
+
+          aside>a {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+
+    }
+    trying to nudge the fucking anchor tags inside of the figure to the left, to align with the rest of the content of aside
+     */
+    
+    h2 {
+        color: rgb(30, 159, 202);
+        padding-top: 2.5rem;
+    }
+    
+    .story>h2 {
+        color: black;
+    }
+    
+    .caption {
+        box-sizing: border-box;
+        text-align: left;
+    }
+    
+    h3 {
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    /*     
+    .top-content+h2 {
+        padding-bottom: 2rem;
+        do the game so you can properly select this, direct descendant or immediate descendant something 
+    } */
+    
+    #bottom p:first-of-type {
+        width: 25rem;
+        margin: auto;
+        position: relative;
+        line-height: 1.2;
+    }
+    
+    aside h3:first-of-type {
+        width: 15rem;
+    }
+    
+    aside a {
+        color: rgb(30, 159, 202)
+    }
+    
+    .sr-only {
+        position: absolute;
+        left: -10000px;
+        top: auto;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+    }
+</style>
+
+<body>
+    <a href="#main-content" class="sr-only">Skip to main content</a>
+    <section class="top">
+        <h1>KITTIES TO GO!</h1>
+        <p class="banner"><em>Seattle's premiere drive-thru</em></p>
+        <p class="banner"><em>cat rentals</em></p>
+    </section>
+    <nav class="primary">
+        <div class="nav">
+            <a href="about">About<span class="space">/</span></a>
+            <a href="rates">Rates<span class="space">/</span></a>
+            <a href="liability_release">Liability Release<span class="space">/</span></a>
+            <a href="kitty_profiles">Kitty Profiles<span class="space">/</span></a>
+            <a href="book_a_cat">Book a Cat</a>
+        </div>
+    </nav>
+
+    <div class="wrap">
+        <aside>
+            <section class="aside">
+                <h3>CATS IN THE NEWS</h3>
+                <p>Cat Lorem ipsum dolor sit amet consectetur adipisicing elit. atque eveniet iure dolor provident consectetur quaerat suscipit fugiat aliquid exercitationem, repellendus doloribus.
+                </p>
+
+                <span class="nudge"><a  href="find_out_more">Find out more</a></span>
+                <p>Kitty Lorem ipsum, dolor corporis laudantium provident odio beatae quos accusantium id necessitatibus? Pariatur consequatur tenetur dolorem fuga non mollitia.
+
+                </p>
+
+                <span class="nudge"><a  href="find_out_more">Find out more</a></span>
+
+            </section>
+            <section>
+                <h3>CAT OF THE WEEK</h3>
+                <figure>
+                    <img class="tabby" src="https://github.com/UWFront-End-Cert/starters/blob/master/lesson04-mock3-sidebar-cat.jpg?raw=true" alt="cute grey tabby with blue eyes looking quizzically at the camera">
+                    <p class="caption">Cat Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <span class='nudge'><a href="book_now">Book Now >> >></a></span>
+                </figure>
+            </section>
+        </aside>
+        <div class="center">
+            <section class="top-content" id="main-content">
+                <h2 class="blue">Cat Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse quidem assumenda eveniet quos ab quod, rem sequi consequatur amet hic dolores laboriosam, recusandae aperiam fuga optio quas iste mollitia ratione.</h2>
+                <p>Cat Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis non vel dolorum mollitia molestiae nemo libero voluptatum incidunt aut hic quam voluptates at, obcaecati blanditiis autem itaque excepturi minus maxime.In incidunt
+                    facere inventore minus. Voluptatum impedit placeat, ad temporibus ratione minima soluta non odit ab eveniet reiciendis vitae quia veniam similique officia illo magnam at! Vitae iure laudantium provident?</p>
+            </section>
+
+
+            <h2 class="blue">Cat Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem dolorem illum harum odio perferendis praesentium vel deserunt adipisci atque quia, neque perspiciatis consequatur, dolores non cum voluptate autem alias? Assumenda!</h2>
+            <section class="story">
+                <h2>THE KITTIES TO GO STORY</h2>
+                <p>Kitty Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus facilis voluptas maxime minus expedita nam deleniti nisi libero ad, perspiciatis in. Nam eius veritatis eveniet laudantium, consequuntur dolorum saepe ipsa.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ex reprehenderit, maiores ipsa repudiandae quis autem aliquid porro quasi placeat repellat molestiae cum nemo quaerat animi laboriosam doloremque recusandae earum?Cat Lorem,
+                    ipsum dolor sit amet consectetur adipisicing elit. Illo, culpa ab ut ea dolores modi perspiciatis ad inventore asperiores hic saepe nemo architecto sit, in nesciunt quibusdam. Ratione, a culpa?</p>
+                <p> Cat Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, culpa ab ut ea dolores modi perspiciatis ad inventore asperiores hic saepe nemo architecto sit, in nesciunt quibusdam. Ratione, a culpa?</p>
+            </section>
+        </div>
+
+    </div>
+
+    <div id="bottom">
+        <img src="https://github.com/UWFront-End-Cert/starters/blob/master/lesson04-mock5-cat-logo.png?raw=true" alt="kitties to go logo">
+        <p>Cat Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum tempore, excepturi porro dolorum optio pariatur sunt fuga ut tenetur dicta id vel fugit laboriosam similique molestiae ducimus aspernatur cumque adipisci?</p>
+        <nav>
+            <ul>
+                <li><a href="Footer_link_1">Footer link 1</a></li>
+                <li><a href="Footer_link_2">Footer link 2</a></li>
+                <li><a href="Footer_link_3">Footer link 3</a></li>
+                <li><a href="Footer_link_4">Footer link 4</a></li>
+            </ul>
+        </nav>
+        <footer>
+            <p> &#169; 2018 Kitties To Go!, LLC | Seattle, WA</p>
+        </footer>
+    </div>
+</body>
+
+
+</html>
